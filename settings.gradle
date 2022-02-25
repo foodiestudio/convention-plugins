@@ -14,3 +14,5 @@ if (appShell != null) {
     include ':Application'
     project(':Application').projectDir = new File(appShell)
 }
+
+include ':example'
