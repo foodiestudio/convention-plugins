@@ -1,0 +1,16 @@
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "empty"
+
+Properties properties = new Properties()
+properties.load(new File(settingsDir, 'local.properties').newDataInputStream())
+String appShell = properties.getProperty('appShell')
+if (appShell != null) {
+    include ':Application'
+    project(':Application').projectDir = new File(appShell)
+}
