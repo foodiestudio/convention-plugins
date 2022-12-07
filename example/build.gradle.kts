@@ -1,9 +1,8 @@
 plugins {
     id("com.android.library")
     id("org.jetbrains.kotlin.android")
-
+    id("rust-desktop") // from buildSrc
 }
-apply<HelloPlugin>()
 
 android {
     compileSdk = 31
@@ -42,3 +41,16 @@ dependencies {
     androidTestImplementation("androidx.test.ext:junit:1.1.3")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.4.0")
 }
+
+cargo {
+    module = "./matcher"       // Or whatever directory contains your Cargo.toml
+    libName = "matcher"         // Or whatever matches Cargo.toml's [package] name.
+    profile = "release"         // Defaults to "debug"
+    targetDirectory = "$buildDir/cargoBuild/" // Defaults to build/rust/
+}
+//
+//tasks.whenTaskAdded {
+//    if (name == "clean") {
+//        dependsOn("hello")
+//    }
+//}
