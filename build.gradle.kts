@@ -22,7 +22,7 @@ dependencies {
 }
 
 group = "com.github.foodiestudio"
-version = "0.0.1-SNAPSHOT"
+version = "0.1.0"
 
 // 为 buildSrc 里的 Plugin 创建对应的 id，这样才能在 plugins{} 中使用
 gradlePlugin {
