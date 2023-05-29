@@ -1,6 +1,5 @@
 plugins {
     `kotlin-dsl`
-    id("java-gradle-plugin")
     id("maven-publish")
 }
 
@@ -10,7 +9,6 @@ java {
 }
 
 dependencies {
-    implementation(gradleKotlinDsl())
 }
 
 group = "com.github.foodiestudio.plugin"
