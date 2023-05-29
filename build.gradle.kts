@@ -1,4 +1,5 @@
 plugins {
+    `kotlin-dsl`
     id("java-gradle-plugin")
     id("maven-publish")
 }
@@ -7,7 +8,6 @@ java {
     sourceCompatibility = JavaVersion.VERSION_1_8
     targetCompatibility = JavaVersion.VERSION_1_8
 }
-
 
 dependencies {
     implementation(gradleKotlinDsl())
