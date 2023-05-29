@@ -1,4 +1,4 @@
-package com.github.foodiestudio.plugin
+package com.github.foodiestudio.plugin.rust
 
 import org.gradle.api.DefaultTask
 import org.gradle.api.tasks.TaskAction

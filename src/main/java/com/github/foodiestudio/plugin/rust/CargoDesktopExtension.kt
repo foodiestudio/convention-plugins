@@ -1,4 +1,4 @@
-package com.github.foodiestudio.plugin
+package com.github.foodiestudio.plugin.rust
 
 open class CargoDesktopExtension {
     lateinit var module: String
