@@ -54,7 +54,7 @@ lark {
         appSecret = "heiFVL4VHjlH4GmfPqFYyfPfUTkbbV2H"
     }
     sheetUrl = "https://qznxol4xbc.feishu.cn/sheets/LS4os3xmMhVwmwt1876cJb4Xn5f?sheet=9d44da"
-    // export csv file to custom folder, default path like $buildDir/lark/LS4os3xmMhVwmwt1876cJb4Xn5f/9d44da/output.csv
+    // export csv file to custom folder, default path like $buildDir/lark-sheet/LS4os3xmMhVwmwt1876cJb4Xn5f/9d44da/output.csv
     exportDirectory = "./custom"
 }
 ```
