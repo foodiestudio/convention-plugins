@@ -21,7 +21,7 @@ gradlePlugin {
     plugins {
         create("rustDesktop") {
             id = "rust-desktop"
-            implementationClass = "CargoDesktopPlugin"
+            implementationClass = "com.github.foodiestudio.plugin.CargoDesktopPlugin"
         }
     }
 }
