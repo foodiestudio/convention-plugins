@@ -1,6 +1,16 @@
-//// Top-level build file where you can add configuration options common to all subprojects/modules.
 plugins {
-    id("com.android.library") apply false
-    id("org.jetbrains.kotlin.android")  apply false
-    id("rust-desktop") apply false // from buildSrc
+    `kotlin-dsl`
+}
+
+dependencies {
+}
+
+// 为 buildSrc 里的 Plugin 创建对应的 id，这样才能在 plugins{} 中使用
+gradlePlugin {
+    plugins {
+        create("rustDesktop") {
+            id = "rust-desktop"
+            implementationClass = "CargoDesktopPlugin"
+        }
+    }
 }

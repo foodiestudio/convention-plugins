@@ -3,6 +3,7 @@ pluginManagement {
         google()
         gradlePluginPortal()
         mavenCentral()
+        maven { setUrl("https://plugins.gradle.org/m2/") }
     }
 
     plugins {
@@ -19,5 +20,3 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "boring-plugins"
-
-include(":example")
