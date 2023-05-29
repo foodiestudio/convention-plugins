@@ -2,6 +2,7 @@ package com.github.foodiestudio.plugin.lark
 
 import com.lark.oapi.Client
 import com.lark.oapi.Client.newBuilder
+import com.lark.oapi.core.enums.BaseUrlEnum
 import com.lark.oapi.core.response.BaseResponse
 import com.lark.oapi.core.response.RawResponse
 import com.lark.oapi.core.response.error.Error
@@ -11,9 +12,10 @@ import com.lark.oapi.service.sheets.v3.model.GetSpreadsheetSheetFilterReq
 import com.lark.oapi.service.sheets.v3.model.QuerySpreadsheetSheetReq
 import com.lark.oapi.service.sheets.v3.model.Sheet
 
-class LarkSheetHelper(appId: String, appSecret: String) {
+class LarkSheetHelper(appId: String, appSecret: String, chinaOnly: Boolean) {
 
     private val client: Client = newBuilder(appId, appSecret)
+        .openBaseUrl(if (chinaOnly) BaseUrlEnum.FeiShu else BaseUrlEnum.LarkSuite)
         .logReqAtDebug(true)
         .build()
 

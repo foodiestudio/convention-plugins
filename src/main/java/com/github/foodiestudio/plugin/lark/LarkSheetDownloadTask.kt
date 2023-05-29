@@ -11,7 +11,7 @@ abstract class LarkSheetDownloadTask : DefaultTask() {
     @TaskAction
     fun build() {
         with(project.extensions.getByType(LarkSheetExtension::class.java)) {
-            val helper = LarkSheetHelper(appId = client.appId, appSecret = client.appSecret)
+            val helper = LarkSheetHelper(appId = client.appId, appSecret = client.appSecret, chinaOnly = client.feishu)
             val uri = URI.create(sheetUrl)
             val spreadsheetToken = uri.path.split("/").last()
             val sheetId = uri.findParameterValue("sheet")
