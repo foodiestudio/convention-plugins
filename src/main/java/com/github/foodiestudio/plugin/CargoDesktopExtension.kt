@@ -1,3 +1,5 @@
+package com.github.foodiestudio.plugin
+
 open class CargoDesktopExtension {
     lateinit var module: String
     lateinit var libName: String

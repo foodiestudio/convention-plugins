@@ -1,3 +1,5 @@
+package com.github.foodiestudio.plugin
+
 import org.gradle.api.DefaultTask
 import org.gradle.api.tasks.TaskAction
 import java.io.File
