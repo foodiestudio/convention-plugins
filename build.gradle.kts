@@ -35,5 +35,9 @@ gradlePlugin {
             id = "lark-sheet"
             implementationClass = "com.github.foodiestudio.plugin.lark.LarkSheetPlugin"
         }
+        create("githubPublish") {
+            id = "github-publish"
+            implementationClass = "com.github.foodiestudio.plugin.github.GithubPublishPlugin"
+        }
     }
 }
