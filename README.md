@@ -10,12 +10,14 @@
 - register plugin
     ```kotlin
     // settings.gradle.kts
-    resolutionStrategy {
-        eachPlugin {
-            if (requested.id.id == "rust-desktop") {
-                useModule("com.github.foodiestudio:boring-plugins:$version")
-            }
-        }
+    pluginManagement {
+      resolutionStrategy {
+          eachPlugin {
+              if (requested.id.id == "rust-desktop") {
+                  useModule("com.github.foodiestudio:boring-plugins:$version")
+              }
+          }
+      }
     }
     ```
 - use plugin in module
