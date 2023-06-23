@@ -11,13 +11,17 @@
     ```kotlin
     // settings.gradle.kts
     pluginManagement {
-      resolutionStrategy {
-          eachPlugin {
-              if (requested.id.id == "rust-desktop") {
-                  useModule("com.github.foodiestudio:boring-plugins:$version")
-              }
-          }
-      }
+        repositories {
+            //...
+            maven("https://jitpack.io")
+        }
+        resolutionStrategy {
+            eachPlugin {
+                if (requested.id.id == "rust-desktop") {
+                    useModule("com.github.foodiestudio:boring-plugins:$version")
+                }
+            }
+        }
     }
     ```
 - use plugin in module
