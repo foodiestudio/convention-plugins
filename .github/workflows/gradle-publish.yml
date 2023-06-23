@@ -34,8 +34,7 @@ jobs:
       - name: Publish to GitHub Packages
         uses: gradle/gradle-build-action@4137be6a8bf7d7133955359dbd952c0ca73b1021
         with:
-          # 这个并非标准的 task，是在 com.github.foodiestudio:boring-plugins 定义的
-          arguments: publishToGithubPackages
+          arguments: publish
         env:
           USERNAME: ${{ github.actor }}
           TOKEN: ${{ secrets.GITHUB_TOKEN }}
