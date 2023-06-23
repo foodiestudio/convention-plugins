@@ -65,3 +65,24 @@ lark {
     exportDirectory = "./custom"
 }
 ```
+
+#### github-publish
+内置了 `maven-publish` 的依赖
+
+```kotlin
+githubPackage {
+    owner = "foodiestudio"
+    credentials {
+        username = rootProject.findLocalProp("github.username") ?: System.getenv("USERNAME")
+        password = rootProject.findLocalProp("github.classicToken") ?: System.getenv("TOKEN")
+    }
+    packages {
+        repo("libs-versions") {
+            includeVersion = all()
+        }
+        repo("public") {
+            includeVersion = stableOnly()
+        }
+    }
+}
+```
