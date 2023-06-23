@@ -16,7 +16,7 @@ class GithubPublishPlugin : Plugin<Project> {
 
             target.extensions.configure(PublishingExtension::class.java) {
                 repositories {
-                    githubConfig.publishingConfig.repoMap
+                    githubConfig.packagesConfig.repoMap
                         .filterValues { it.includeVersion.matches(target.version.toString()) }
                         .forEach { (repoName, _) ->
                             maven {
@@ -34,7 +34,7 @@ class GithubPublishPlugin : Plugin<Project> {
     }
 
     companion object {
-        const val extensionName = "github"
+        const val extensionName = "githubPackage"
     }
 
 }
