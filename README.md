@@ -5,6 +5,13 @@
 
 > 主要使用 kts 来实现，然后实现类可以直接用 Kotlin 来写，主要是这样能有语法高亮。
 
+## Compatible Specification
+
+| AGP Version |                           Latest Support Version                           |
+|:-----------:|:--------------------------------------------------------------------------:|
+|    7.4.x    | [0.3.x](https://github.com/foodiestudio/boring-plugins/releases/tag/0.3.0) |
+|    8.0.x    |                                    todo                                    |
+
 ### Quick Start
 
 - register plugin
