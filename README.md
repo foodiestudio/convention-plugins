@@ -24,7 +24,7 @@
         }
         resolutionStrategy {
             eachPlugin {
-                if (requested.id.id == "rust-desktop") {
+                if (requested.id.id.startsWith("foodiestudio")) {
                     useModule("com.github.foodiestudio:boring-plugins:$version")
                 }
             }
@@ -34,9 +34,28 @@
 - use plugin in module
   ```kotlin
   plugins {
-      id("rust-desktop") // for example
+      id("foodiestudio.android.application.compose") // for example
   }
   ```
+  
+#### android
+The top-level build file
+
+```kotlin
+plugins {
+  id("foodiestudio.android.application.compose") apply false
+  id("foodiestudio.android.library.compose") apply false
+}
+```
+
+The module-level build file
+
+```kotlin
+plugins {
+  id("foodiestudio.android.application.compose") 
+  // or id("foodiestudio.android.library.compose") for library module
+}
+```
 
 #### rust-desktop
 ```kotlin
