@@ -1,5 +1,5 @@
-## boring-plugins
-[![](https://jitpack.io/v/foodiestudio/boring-plugins.svg)](https://jitpack.io/#foodiestudio/boring-plugins)
+## convention-plugins
+[![](https://jitpack.io/v/foodiestudio/convention-plugins.svg)](https://jitpack.io/#foodiestudio/convention-plugins)
 
 存放一些自定义 gradle plugin。
 
@@ -9,7 +9,7 @@
 
 | AGP Version |                           Latest Support Version                           |
 |:-----------:|:--------------------------------------------------------------------------:|
-|    7.4.x    | [0.3.x](https://github.com/foodiestudio/boring-plugins/releases/tag/0.3.0) |
+|    7.4.x    | [0.3.x](https://github.com/foodiestudio/convention-plugins/releases/tag/0.3.0) |
 |    8.0.x    |                                    todo                                    |
 
 ### Quick Start
@@ -25,7 +25,7 @@
         resolutionStrategy {
             eachPlugin {
                 if (requested.id.id.startsWith("foodiestudio")) {
-                    useModule("com.github.foodiestudio:boring-plugins:$version")
+                    useModule("com.github.foodiestudio:convention-plugins:0.3.0-beta1")
                 }
             }
         }
