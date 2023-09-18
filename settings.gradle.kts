@@ -22,4 +22,4 @@ dependencyResolutionManagement {
         }
     }
 }
-rootProject.name = "boring-plugins"
+rootProject.name = "convention-plugins"

@@ -1,7 +1,7 @@
 package com.github.foodiestudio.plugin.android.internal
 
 import com.android.build.api.dsl.CommonExtension
-import com.github.foodiestudio.boring_plugins.BuildConfig
+import com.github.foodiestudio.convention_plugins.BuildConfig
 import org.gradle.api.Project
 import org.gradle.kotlin.dsl.dependencies
 import org.gradle.kotlin.dsl.withType
