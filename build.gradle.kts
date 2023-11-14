@@ -24,7 +24,7 @@ buildConfig {
 
 dependencies {
     // kotlin 版本由 gradle 里的版本决定，升级 gradle 会升级对应的 kotlin 依赖
-    compileOnly("com.larksuite.oapi:oapi-sdk:2.0.27")
+    compileOnly("com.larksuite.oapi:oapi-sdk:2.0.30")
     compileOnly("com.github.doyaaaaaken:kotlin-csv-jvm:1.9.2")
     implementation(sharedLibs.android.gradlePlugin)
     implementation(sharedLibs.kotlin.gradlePlugin)
