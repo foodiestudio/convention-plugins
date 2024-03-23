@@ -41,6 +41,8 @@
 #### android
 The top-level build file
 
+> compose 版本依赖 io.github.foodiestudio:libs-versions
+
 ```kotlin
 plugins {
   id("foodiestudio.android.application.compose") apply false
