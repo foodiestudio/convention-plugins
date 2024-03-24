@@ -5,14 +5,14 @@ plugins {
 }
 
 java {
-    sourceCompatibility = JavaVersion.VERSION_11
-    targetCompatibility = JavaVersion.VERSION_11
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
 }
 
 tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
     kotlinOptions {
         freeCompilerArgs = freeCompilerArgs + "-Xallow-result-return-type"
-        jvmTarget = JavaVersion.VERSION_11.toString()
+        jvmTarget = JavaVersion.VERSION_17.toString()
     }
 }
 
@@ -31,7 +31,7 @@ dependencies {
 }
 
 group = "com.github.foodiestudio"
-version = "0.3.3"
+version = "0.3.4-LOCAL"
 
 // 为 buildSrc 里的 Plugin 创建对应的 id，这样才能在 plugins{} 中使用
 gradlePlugin {

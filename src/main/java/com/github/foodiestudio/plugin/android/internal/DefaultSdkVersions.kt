@@ -4,11 +4,11 @@ import org.gradle.api.JavaVersion
 
 object DefaultSdkVersions {
 
-    val java = JavaVersion.VERSION_11
+    val java = JavaVersion.VERSION_17
 
     const val minSdk: Int = 21
 
-    const val compileSdk: Int = 33
+    const val compileSdk: Int = 34
 
-    const val targetSdk: Int = 33
+    const val targetSdk: Int = 34
 }
