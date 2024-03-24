@@ -7,10 +7,10 @@
 
 ## Compatible Specification
 
-| AGP Version |                           Latest Support Version                           |
-|:-----------:|:--------------------------------------------------------------------------:|
+| AGP Version |                             Latest Support Version                             |
+|:-----------:|:------------------------------------------------------------------------------:|
 |    7.4.x    | [0.3.x](https://github.com/foodiestudio/convention-plugins/releases/tag/0.3.0) |
-|    8.0.x    |                                    todo                                    |
+|    8.0.x    | [0.4.x](https://github.com/foodiestudio/convention-plugins/releases/tag/0.4.0) |
 
 ### Quick Start
 
@@ -25,7 +25,7 @@
         resolutionStrategy {
             eachPlugin {
                 if (requested.id.id.startsWith("foodiestudio")) {
-                    useModule("com.github.foodiestudio:convention-plugins:0.3.0-beta1")
+                    useModule("com.github.foodiestudio:convention-plugins:0.4.0")
                 }
             }
         }
