@@ -22,7 +22,7 @@ internal fun Project.configureAndroidCompose(
             kotlinCompilerExtensionVersion = BuildConfig.COMPOSE_COMPILER_VERSION
         }
 
-        packagingOptions {
+        packaging {
             resources {
                 excludes += "/META-INF/{AL2.0,LGPL2.1}"
             }
