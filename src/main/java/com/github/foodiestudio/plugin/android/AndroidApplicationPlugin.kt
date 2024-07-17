@@ -41,7 +41,7 @@ class AndroidApplicationPlugin : Plugin<Project> {
  * Configure base Kotlin with Android options
  */
 internal fun Project.configureKotlinAndroid(
-    commonExtension: CommonExtension<*, *, *, *>
+    commonExtension: CommonExtension<*, *, *, *, *>
 ) {
     commonExtension.apply {
         compileSdk = DefaultSdkVersions.compileSdk
