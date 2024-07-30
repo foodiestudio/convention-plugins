@@ -9,7 +9,7 @@
 |:-----------:|:------------------------------------------------------------------------------:|
 |    7.4.x    | [0.3.x](https://github.com/foodiestudio/convention-plugins/releases/tag/0.3.0) |
 |    8.0.x    | [0.4.x](https://github.com/foodiestudio/convention-plugins/releases/tag/0.4.0) |
-|    8.1.x    | [0.5.x](https://github.com/foodiestudio/convention-plugins/releases/tag/0.5.1) |
+|    8.1.x    | [0.5.x](https://github.com/foodiestudio/convention-plugins/releases/tag/0.5.2) |
 
 ### Quick Start
 
