@@ -16,7 +16,7 @@ dependencyResolutionManagement {
     }
     versionCatalogs {
         create("sharedLibs") {
-            from("io.github.foodiestudio:libs-versions:2023.09.02")
+            from("io.github.foodiestudio:libs-versions:2023.10.00")
             library("android-gradlePlugin", "com.android.tools.build", "gradle").versionRef("agp")
             library("kotlin-gradlePlugin", "org.jetbrains.kotlin", "kotlin-gradle-plugin").versionRef("kotlin")
         }
