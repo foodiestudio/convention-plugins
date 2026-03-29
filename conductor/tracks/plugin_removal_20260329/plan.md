@@ -3,9 +3,9 @@
 ## Overview
 This plan outlines the steps to remove Android-specific convention plugins, their internal logic, dependencies, and documentation.
 
-## Phase 1: Preparation and Verification
+## Phase 1: Preparation and Verification [checkpoint: e8af406]
 - [x] Task: Baseline verification. Run `./gradlew clean build` and `./gradlew tasks` to ensure current stable state.
-- [ ] Task: Conductor - User Manual Verification 'Phase 1: Preparation and Verification' (Protocol in workflow.md)
+- [x] Task: Conductor - User Manual Verification 'Phase 1: Preparation and Verification' (Protocol in workflow.md)
 
 ## Phase 2: Source File Removal
 - [ ] Task: Delete Android plugin source files.
