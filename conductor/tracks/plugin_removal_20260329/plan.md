@@ -34,8 +34,8 @@ This plan outlines the steps to remove Android-specific convention plugins, thei
     - [x] Remove all sections describing Android-related plugins.
 - [x] Task: Conductor - User Manual Verification 'Phase 4: Documentation Update' (Protocol in workflow.md)
 
-## Phase 5: Final Verification
+## Phase 5: Final Verification [checkpoint: d3f2f72]
 - [x] Task: Run full build and task list check.
     - [x] Run `./gradlew clean build`
     - [x] Run `./gradlew tasks` and verify Rust/Lark/GitHub tasks are present.
-- [ ] Task: Conductor - User Manual Verification 'Phase 5: Final Verification' (Protocol in workflow.md)
+- [x] Task: Conductor - User Manual Verification 'Phase 5: Final Verification' (Protocol in workflow.md)
