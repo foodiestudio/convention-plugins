@@ -7,7 +7,7 @@ This plan outlines the steps to remove Android-specific convention plugins, thei
 - [x] Task: Baseline verification. Run `./gradlew clean build` and `./gradlew tasks` to ensure current stable state.
 - [x] Task: Conductor - User Manual Verification 'Phase 1: Preparation and Verification' (Protocol in workflow.md)
 
-## Phase 2: Source File Removal
+## Phase 2: Source File Removal [checkpoint: 160c042]
 - [x] Task: Delete Android plugin source files.
     - [x] Remove `src/main/java/com/github/foodiestudio/plugin/android/AndroidApplicationComposePlugin.kt`
     - [x] Remove `src/main/java/com/github/foodiestudio/plugin/android/AndroidApplicationPlugin.kt`
@@ -15,7 +15,7 @@ This plan outlines the steps to remove Android-specific convention plugins, thei
     - [x] Remove `src/main/java/com/github/foodiestudio/plugin/android/AndroidLibraryPlugin.kt`
 - [x] Task: Delete internal Android-specific logic.
     - [x] Remove the whole `src/main/java/com/github/foodiestudio/plugin/android/internal/` directory and its contents.
-- [ ] Task: Conductor - User Manual Verification 'Phase 2: Source File Removal' (Protocol in workflow.md)
+- [x] Task: Conductor - User Manual Verification 'Phase 2: Source File Removal' (Protocol in workflow.md)
 
 ## Phase 3: Configuration Cleanup
 - [ ] Task: Clean up `build.gradle.kts`.
