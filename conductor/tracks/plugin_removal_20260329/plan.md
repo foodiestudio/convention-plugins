@@ -18,15 +18,15 @@ This plan outlines the steps to remove Android-specific convention plugins, thei
 - [x] Task: Conductor - User Manual Verification 'Phase 2: Source File Removal' (Protocol in workflow.md)
 
 ## Phase 3: Configuration Cleanup
-- [ ] Task: Clean up `build.gradle.kts`.
-    - [ ] Remove `buildConfig` block (since all its fields are Android-specific).
-    - [ ] Remove Android plugin registrations from the `gradlePlugin` block.
-    - [ ] Remove `implementation(sharedLibs.android.gradlePlugin)` and other Android-specific dependencies.
-- [ ] Task: Clean up `gradle.properties`.
-    - [ ] Remove `android.useAndroidX=true`
-    - [ ] Remove `android.enableJetifier=true`
-- [ ] Task: Clean up `settings.gradle.kts`.
-    - [ ] Remove Android-specific overrides from `versionCatalogs`.
+- [x] Task: Clean up `build.gradle.kts`.
+    - [x] Remove `buildConfig` block (since all its fields are Android-specific).
+    - [x] Remove Android plugin registrations from the `gradlePlugin` block.
+    - [x] Remove `implementation(sharedLibs.android.gradlePlugin)` and other Android-specific dependencies.
+- [x] Task: Clean up `gradle.properties`.
+    - [x] Remove `android.useAndroidX=true`
+    - [x] Remove `android.enableJetifier=true`
+- [~] Task: Clean up `settings.gradle.kts`.
+    - [~] Remove Android-specific overrides from `versionCatalogs`.
 - [ ] Task: Conductor - User Manual Verification 'Phase 3: Configuration Cleanup' (Protocol in workflow.md)
 
 ## Phase 4: Documentation Update
