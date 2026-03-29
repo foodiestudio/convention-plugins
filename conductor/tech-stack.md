@@ -5,8 +5,6 @@
 
 ## Frameworks & APIs
 - **Gradle Plugin API:** The core framework used to extend Gradle's build lifecycle, add custom tasks, and configure extensions.
-- **Android Gradle Plugin (AGP):** Utilized within Android-specific convention plugins to configure Application and Library modules.
-- **Jetpack Compose Configuration:** Configured centrally via BOMs and Compiler versions for Android projects.
 
 ## Execution Environment
 - **Java Virtual Machine (JVM):** Targeting Java 17 for plugin compilation and execution.
