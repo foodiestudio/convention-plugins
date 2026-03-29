@@ -1,0 +1,8 @@
+{
+  "track_id": "plugin_removal_20260329",
+  "type": "refactor",
+  "status": "new",
+  "created_at": "2026-03-29T12:00:00Z",
+  "updated_at": "2026-03-29T12:00:00Z",
+  "description": "remove plugins - remove androidApplicationCompose/androidApplication/androidLibrary/androidLibraryCompose plugins and relevant dependencies - update README - keep other plugins still work after refactoring."
+}
