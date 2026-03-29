@@ -17,7 +17,7 @@ This plan outlines the steps to remove Android-specific convention plugins, thei
     - [x] Remove the whole `src/main/java/com/github/foodiestudio/plugin/android/internal/` directory and its contents.
 - [x] Task: Conductor - User Manual Verification 'Phase 2: Source File Removal' (Protocol in workflow.md)
 
-## Phase 3: Configuration Cleanup
+## Phase 3: Configuration Cleanup [checkpoint: 1fab083]
 - [x] Task: Clean up `build.gradle.kts`.
     - [x] Remove `buildConfig` block (since all its fields are Android-specific).
     - [x] Remove Android plugin registrations from the `gradlePlugin` block.
@@ -25,9 +25,9 @@ This plan outlines the steps to remove Android-specific convention plugins, thei
 - [x] Task: Clean up `gradle.properties`.
     - [x] Remove `android.useAndroidX=true`
     - [x] Remove `android.enableJetifier=true`
-- [~] Task: Clean up `settings.gradle.kts`.
-    - [~] Remove Android-specific overrides from `versionCatalogs`.
-- [ ] Task: Conductor - User Manual Verification 'Phase 3: Configuration Cleanup' (Protocol in workflow.md)
+- [x] Task: Clean up `settings.gradle.kts`.
+    - [x] Remove Android-specific overrides from `versionCatalogs`.
+- [x] Task: Conductor - User Manual Verification 'Phase 3: Configuration Cleanup' (Protocol in workflow.md)
 
 ## Phase 4: Documentation Update
 - [ ] Task: Update `README.md`.
