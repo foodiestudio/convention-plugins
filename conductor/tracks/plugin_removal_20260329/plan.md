@@ -30,8 +30,8 @@ This plan outlines the steps to remove Android-specific convention plugins, thei
 - [x] Task: Conductor - User Manual Verification 'Phase 3: Configuration Cleanup' (Protocol in workflow.md)
 
 ## Phase 4: Documentation Update
-- [ ] Task: Update `README.md`.
-    - [ ] Remove all sections describing Android-related plugins.
+- [~] Task: Update `README.md`.
+    - [~] Remove all sections describing Android-related plugins.
 - [ ] Task: Conductor - User Manual Verification 'Phase 4: Documentation Update' (Protocol in workflow.md)
 
 ## Phase 5: Final Verification
