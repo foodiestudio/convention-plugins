@@ -8,13 +8,13 @@ This plan outlines the steps to remove Android-specific convention plugins, thei
 - [x] Task: Conductor - User Manual Verification 'Phase 1: Preparation and Verification' (Protocol in workflow.md)
 
 ## Phase 2: Source File Removal
-- [ ] Task: Delete Android plugin source files.
-    - [ ] Remove `src/main/java/com/github/foodiestudio/plugin/android/AndroidApplicationComposePlugin.kt`
-    - [ ] Remove `src/main/java/com/github/foodiestudio/plugin/android/AndroidApplicationPlugin.kt`
-    - [ ] Remove `src/main/java/com/github/foodiestudio/plugin/android/AndroidLibraryComposePlugin.kt`
-    - [ ] Remove `src/main/java/com/github/foodiestudio/plugin/android/AndroidLibraryPlugin.kt`
-- [ ] Task: Delete internal Android-specific logic.
-    - [ ] Remove the whole `src/main/java/com/github/foodiestudio/plugin/android/internal/` directory and its contents.
+- [x] Task: Delete Android plugin source files.
+    - [x] Remove `src/main/java/com/github/foodiestudio/plugin/android/AndroidApplicationComposePlugin.kt`
+    - [x] Remove `src/main/java/com/github/foodiestudio/plugin/android/AndroidApplicationPlugin.kt`
+    - [x] Remove `src/main/java/com/github/foodiestudio/plugin/android/AndroidLibraryComposePlugin.kt`
+    - [x] Remove `src/main/java/com/github/foodiestudio/plugin/android/AndroidLibraryPlugin.kt`
+- [x] Task: Delete internal Android-specific logic.
+    - [x] Remove the whole `src/main/java/com/github/foodiestudio/plugin/android/internal/` directory and its contents.
 - [ ] Task: Conductor - User Manual Verification 'Phase 2: Source File Removal' (Protocol in workflow.md)
 
 ## Phase 3: Configuration Cleanup
