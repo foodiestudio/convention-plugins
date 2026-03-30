@@ -18,7 +18,7 @@ tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
 
 dependencies {
     // kotlin 版本由 gradle 里的版本决定，升级 gradle 会升级对应的 kotlin 依赖
-    compileOnly("com.larksuite.oapi:oapi-sdk:2.2.9")
+    compileOnly("com.larksuite.oapi:oapi-sdk:2.5.3")
     compileOnly("com.github.doyaaaaaken:kotlin-csv-jvm:1.9.2")
     implementation(sharedLibs.kotlin.gradlePlugin)
 }
